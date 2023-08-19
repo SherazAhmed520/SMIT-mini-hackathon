@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css">
+    <style>
+        /* Custom font */
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+            /* Image only BG fallback */
+
+            /* Background = gradient + image pattern combo */
+            background:
+                whitesmoke;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Form styles */
+        #msform {
+            width: 400px;
+            margin: 50px auto;
+            text-align: center;
+            position: relative;
+        }
+
+        #msform fieldset {
+            background: white;
+            border: 0 none;
+            border-radius: 3px;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+            padding: 20px 30px;
+            box-sizing: border-box;
+            width: 80%;
+            margin: 0 10%;
+            /* Stacking fieldsets above each other */
+            position: relative;
+        }
+
+        /* Hide all except first fieldset */
+        #msform fieldset:not(:first-of-type) {
+            display: none;
+        }
+
+        /* Inputs */
+        #msform input,
+        #msform textarea {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            color: #2C3E50;
+            font-size: 13px;
+        }
+
+        /* Buttons */
+        #msform .action-button {
+            width: 100px;
+            background: #7749F8;
+            font-weight: bold;
+            color: white;
+            border: 0 none;
+            border-radius: 1px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        #msform .action-button:hover,
+        #msform .action-button:focus {
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+        }
+
+        /* Headings */
+        .fs-title {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+
+        .fs-subtitle {
+            font-weight: normal;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Progressbar */
+        #progressbar {
+            margin-bottom: 30px;
+            overflow: hidden;
+            /* CSS counters to number the steps */
+            counter-reset: step;
+        }
+
+        #progressbar li {
+            list-style-type: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 9px;
+            width: 33.33%;
+            float: left;
+            position: relative;
+        }
+
+        #progressbar li:before {
+            content: counter(step);
+            counter-increment: step;
+            width: 20px;
+            line-height: 20px;
+            display: block;
+            font-size: 10px;
+            color: #333;
+            background: white;
+            border-radius: 3px;
+            margin: 0 auto 5px auto;
+        }
+
+        /* Progressbar connectors */
+        #progressbar li:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: white;
+            position: absolute;
+            left: -50%;
+            top: 9px;
+            z-index: -1;
+            /* Put it behind the numbers */
+        }
+
+        #progressbar li:first-child:after {
+            /* Connector not needed before the first step */
+            content: none;
+        }
+
+        /* Marking active/completed steps green */
+        /* The number of the step and the connector before it = green */
+        #progressbar li.active:before,
+        #progressbar li.active:after {
+            background: #7749F8;
+            color: white;
+        }
+
+
+        header {
+            background-color: whitesmoke;
+        }
+
+        .navigation {
+            width: Fixed (1, 440px);
+            height: 30px;
+            padding: 6px 166px 6px 166px;
+            justify-content: space-between;
+            background-color: #7749F8;
+            display: flex;
+        }
+
+        .header_nav {
+            width: 1, 440px;
+            height: 152px;
+
+        }
+
+        .navigation a {
+            color: #fff;
+            text-align: end;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 5px;
+
+        }
+        h5{
+            font-size: large;
+        }
+
+        #heading_top {
+            color: #fff;
+            /* margin-top: -2px; */
+            font-weight: bold;
+            margin-top: -3px;
+        }
+
+        header h1 {
+            margin-bottom: 70px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <h5 id="heading_top">Personal Blogging App</h5>
+
+            <a href="login.html">Login</a>
+        </nav>
+
+        <div class="heading_nav">
+            <h1>Profile</h1>
+        </div>
+    </header>
+    <div id="msform">
+
+        <fieldset>
+            <h2 class="fs-title">Enter your Info</h2>
+            <input type="text" name="Name" placeholder="Name" id="name" />
+            <input type="text" name="fname" placeholder="Father Name" id="fname" />
+            <input type="text" name="gender" placeholder="Male or Female" id="gender" />
+            <input type="number" name="name" placeholder="Mobile #" id="number" />
+
+            <div>
+                <img src="../img/" alt="">
+                <input type="file" name="cpass" placeholder="Enter image" id="image" />
+            </div>
+
+
+
+
+            <input type="button" name="next" class="next action-button" value="Click" id="btn" />
+        </fieldset>
+
+    </div>
+
+
+
+</body>
+
+</html>

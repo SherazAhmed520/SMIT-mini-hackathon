@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy';
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: #fff;
+
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: xx-large;
+            margin-top: 20px;
+        }
+
+        /* span {
+            color: gray;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: orange;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+        } */
+
+        .inp {
+            width: 320px;
+            height: 35px;
+            border-radius: 7px;
+            border: none;
+            border: 2px solid rgb(214, 214, 214);
+            /* margin-top: 22px; */
+            margin-bottom: 20px;
+            /* padding-bottom: 30px; */
+            /* margin-left:5px; */
+        }
+
+        #email {
+            margin-top: 40px;
+        }
+
+        #btn1 {
+            width: 100px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: rgb(84, 66, 241);
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+
+        #btn1:hover {
+            transition: 0.7s;
+            background-color: azure;
+            color: blue;
+            border-color: rgb(11, 214, 255);
+
+        }
+
+        #p {
+            margin-right: 310px;
+            margin-top: 40px;
+            color: rgb(66, 66, 66);
+            font-weight: 500;
+            font-size: large;
+        }
+
+        input::placeholder {
+            font-style: italic;
+            color: rgb(180, 180, 180);
+            font-size: 15px;
+        }
+
+        .inp:hover {
+            border-color: blueviolet;
+        }
+
+        #main {
+            border: 2px solid rgb(244, 243, 243);
+            width: 400px;
+            height: 250px;
+            /* border-radius: 35px; */
+            box-shadow: 3px 6px 10px 4px rgba(164, 149, 149, 0.858);
+            background-color: white;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .navigation {
+            width: Fixed (1, 440px);
+            height: 30px;
+            padding: 6px 166px 6px 166px;
+            justify-content: space-between;
+            background-color: #7749F8;
+            display: flex;
+            }
+
+            .header_nav{
+            width:  1,440px;
+            height:  152px;
+
+            }
+        header{
+             background-color: whitesmoke;   
+            }
+       
+        .navigation a{
+            color: #fff;
+            text-align: end;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: -5px;
+
+        }
+        #heading_top{
+            color: #fff;
+            /* margin-top: -2px; */
+           font-weight: bold;
+           margin-top: -3px;
+        }
+       
+        header h1{
+            margin-bottom: 70px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navigation">
+
+                    <h5 id="heading_top">Personal Blogging App</h5>
+
+                  <a href="signup.html">Sign Up</a>
+
+        </div>
+
+        <div class="heading_nav">
+            <h1>Login</h1>
+        </div>
+    
+    </header>
+    
+    <center>
+    
+        <div id="main">
+    
+            <!-- <span> Or </span><a href="./signup.html">Create a new one</a> <br> -->
+    
+            <form id="btn">
+    
+                <input type="email" class="inp" id="email" placeholder="Enter Email"><br>
+    
+                <input type="password" class="inp" id="password" placeholder="Enter Password"><br>
+    
+                <button id="btn1" type="submit">Login</button><br>
+    
+    
+            </form>
+    
+    
+        </div>
+    
+    </center>
+
+
+    <script type="module" src="signapp.js"></script>
+</body>
+
+</html>
+
+
+
+

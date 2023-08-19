@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 255, 0); */
+}
+
+.navigation {
+    width: Fixed (1, 440px);
+    height: 30px;
+    padding: 6px 166px 6px 166px;
+    justify-content: space-between;
+    background-color: #7749F8;
+    display: flex;
+    }
+
+    .header_nav{
+        width:  1,440px;
+        height:  152px;
+
+    }
+
+ header{
+    background-color: rgba(187, 185, 185, 0.385);   
+ }
+
+.navigation a{
+    color: #fff;
+    text-align: end;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: -5px;
+
+}
+#heading_top{
+    color: #fff;
+   font-weight: bold;
+   margin-top: -3px;
+}
+header h1{
+    margin-bottom: 70px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.header_nav{
+    width: 1,440px;
+    height: 152px;
+    
+}
+
+                       /* Dashboard */
+
+.dashboard_main{
+    width: 881px;
+    height: 400px;
+    top: 181px;
+    left: 166px;
+    box-shadow: 0px 4px 10px 0px #0000001F;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: absolute; */
+}
+#blog_inp{
+    width: 760px;
+    height: 38px;
+    top: 230px;
+    left: 233px;
+    gap: 6px;
+    margin-top: 10px;
+}
+#blogText{
+    width: 760px;
+    height: 114px;
+    top: 288px;
+    left: 233px;
+    gap: 6px;
+    margin-top: 10px;
+}
+/* #add{
+    width: 135px;
+    height: 38px;
+    margin-top: 10px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 6px;
+    gap: 8px;
+    background-color: #7749F8;
+
+} */
+
+.form-control{
+    width: 100px;
+}
+
+
+.dashboard_blogs {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+
+  .blog-entry {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .dashboard_blogs{
+    width: 881px;
+    height: 400px;
+    top: 181px;
+    left: 166px;
+    box-shadow: 0px 4px 10px 0px #0000001F;
+    background-color: white;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+  }
